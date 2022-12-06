@@ -2,20 +2,24 @@ import java.util.Scanner;
 
 class Main {
   public static void main(String[] args) {
-    System.out.println("Enter your name");
 
     Scanner in = new Scanner(System.in);
-    String s = in.nextLine();
 
-    if(s.equals("Kanu")){
-      System.out.println("Hey Kanu!");
-    }else if(s.equals("Suge")){
-      System.out.println("Hey Suge!");
-      
-    }else{
-      System.out.println("You are not welcome here");
+    int size = 5;
+
+    int[] grades = new int[size];
+
+    System.out.println("Enter 5 numbers");
+    for(int i = 0; i < size; i++){
+      grades[i] = in.nextInt();
+    }
+    for(int i = 0; i < size; i++){
+      System.out.println(grades[i]);
     }
 
     in.close();
+
+    
+    
   }
 }
